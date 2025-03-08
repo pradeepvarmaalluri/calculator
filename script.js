@@ -9,11 +9,15 @@ function appendValue(value)
 }
 function clearDisplay()
 {
-    
-    previousValue=eval(displayInput.value);
+    try{
+        previousValue=eval(displayInput.value);
     
     document.getElementById("presult").textContent = previousValue;
     displayInput.value="";
+    }
+   catch{
+    displayInput.value="";
+   }
 }
 function clearElement(){
     displayInput.value=displayInput.value.slice(0,-1);
