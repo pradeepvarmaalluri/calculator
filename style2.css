@@ -124,6 +124,11 @@ button[data-value="/"]::before {
     content: "÷";  /* Display multiplication symbol */
 }
 
+#calculator, button, input {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 600px) {
     #calculator {
